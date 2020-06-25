@@ -28,11 +28,12 @@
 
 /* The Close Button */
 #close, #close2 {
-    color: gray;
+    color: #000000;
     float: right;
     font-size: 48px;
     font-weight: bold;
     border: none;
+    background-color: #cccccc;
 }
 
     #close, #close2:hover,
@@ -40,6 +41,7 @@
         color: #000;
         text-decoration: none;
         cursor: pointer;
+        background-color: #cccccc;
     }
 
 /* Modal Content */
@@ -60,7 +62,7 @@
 
 .modal-header {
     padding: 6px 6px;
-    background-color: #f2f3f7;
+    background-color: #ccc;
     color: black;
     font-family: Trebuchet MS;
     font-size: 65px;
@@ -102,18 +104,26 @@
 }
 
 
-#btnFizz, #btnClear, #btnText, #btnCrunch2, #btnClear2, #btnText2 {
-    color: black;
-    padding: 14px 14px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
-    text-align: center;
-    display: inline-block;
-    font-size: 15px;
-    border-radius: 12px;
-    border-color: black;
-    width: 30%;
+#btnFizz, #btnClear, #btnText, #btnCrunch2, #btnClear2, #btnText2, #btnRunHills, #btnShowHills, #btnClearHills, #btnSOAF, #btnShowSOAF, #btnClearSOAF {
+color: black;
+padding: 14px 14px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+text-align: center;
+display: inline-block;
+font-size: 15px;
+border-radius: 12px;
+border-color: black;
+width: 30% !important;
 }
 
+#soafInput1, #soafInput2, #soafInput3, #soafInput4, #soafInput5, #k {
+    width: 15%;
+    font-size: 25px;
+    line-height: inherit;
+}
+
+.allisButtons {
+}
 
 
 .FizzBuzz {
@@ -163,5 +173,8 @@
     to {
         opacity: 1
     }
-}*/
+}
 
+.panel-heading a {
+    background-color: #777777
+}

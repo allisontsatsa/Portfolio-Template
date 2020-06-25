@@ -20,17 +20,20 @@
     <meta name="twitter:url" content="" />
     <meta name="twitter:card" content="" />
 
-    <link href="css/Custom CSS.css" rel="stylesheet" />
+
+    <script src="https://kit.fontawesome.com/37f8e2937f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel='icon' href="images/favicon-16x16.png" />
+
 
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/style.css">
 
-
+    <link href="css/Custom CSS.css" rel="stylesheet" />
+    <link href="Content/prism.css" rel="stylesheet" />
 
     <!-- Animate.css -->
     <link rel="stylesheet" href="css/animate.css">
@@ -40,23 +43,32 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <!-- Flexslider  -->
     <link rel="stylesheet" href="css/flexslider.css">
-    <!-- Flaticons  -->
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
     <!-- Owl Carousel -->
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <!-- Theme style  -->
+    <link rel="stylesheet" href="css/style.css">
 
-    <script src="https://kit.fontawesome.com/37f8e2937f.js" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"></script>
 
+
+
+    <!--<script src="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></script>-->
     <!-- Modernizr JS -->
     <script src="js/modernizr-2.6.2.min.js"></script>
     <!-- FOR IE9 below -->
     <!--[if lt IE 9]>
     <script src="js/respond.min.js"></script>
     <![endif]-->
-    <link href="Content/prism.css" rel="stylesheet" />
+
+    <style>
+        button:focus {
+            outline: none;
+        }
+
+        #fishtext {
+            color: antiquewhite
+        }
+    </style>
 
 
 </head>
@@ -77,7 +89,8 @@
                             <li><a href="#" data-nav-section="about">About</a></li>
 
                             <li><a href="#" data-nav-section="education">Education</a></li>
-                            <li><a href="#" data-nav-section="Portfolio">Portfolio</a></li>
+                            <li><a href="#" data-nav-section="Portfolio">Work Experience</a></li>
+                            <li><a href="#" data-nav-section="applications">Web Applications</a></li>
                             <li><a href="#" data-nav-section="challenges">Coding Challenges</a></li>
                             <li><a href="#" data-nav-section="blog">Blog</a></li>
                             <li><a href="#" data-nav-section="contact">Contact</a></li>
@@ -88,10 +101,8 @@
                 <div class="colorlib-footer">
 
                     <ul>
-                        <li><a href="#"><i class="icon-facebook2"></i></a></li>
-                        <li><a href="#"><i class="icon-twitter2"></i></a></li>
-                        <li><a href="#"><i class="icon-instagram"></i></a></li>
-                        <li><a href="#"><i class="icon-linkedin2"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/allison-tsatsa-99631618/" target="_blank"><i class="icon-linkedin2"></i></a></li>
+                        <li><a href="https://github.com/allisontsatsa" target="_blank"><i class="fab fa-github"></i></a></li>
                     </ul>
                 </div>
 
@@ -101,23 +112,23 @@
                 <section id="colorlib-hero" class="js-fullheight" data-section="home">
                     <div class="flexslider js-fullheight">
                         <ul class="slides">
-                            <li style="background-image: url(images/snowblind.jpeg);">
+                            <li style="background-image: url(images/close-up-of-fish-over-black-background-325044.jpg);">
                                 <div class="overlay"></div>
                                 <div class="container-fluid">
                                     <div class="row">
                                         <div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
                                             <div class="slider-text-inner js-fullheight">
-                                                <div class="desc">
+                                                <div class="desc" id="fishtext">
                                                     <h1>Hi! <br>I'm Allison</h1>
                                                     <h2>Fullstack Developer</h2>
-                                                    <p><a class="btn btn-primary btn-learn">Download CV <i class="icon-download4"></i></a></p>
+                                                    <p><a class="btn btn-primary btn-learn" id="fishtext" href="Content/Allison_Tsatsa.pdf"> Download CV <i class="icon-download4"></i></a></p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </li>
-                            <li style="background-image: url(images/starsnow.jpeg);">
+                            <li style="background-image: url(images/photo-of-person-covered-by-red-headscarf-3214409.jpg);">
                                 <div class="overlay"></div>
                                 <div class="container-fluid">
                                     <div class="row">
@@ -125,7 +136,6 @@
                                             <div class="slider-text-inner">
                                                 <div class="desc text-color:white">
                                                     <h1>I am <br>a Designer</h1>
-                                                    <p><a class="btn btn-primary btn-learn">View Portfolio <i class="icon-briefcase3"></i></a></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -143,12 +153,57 @@
                                 <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
                                     <div class="col-md-12">
                                         <div class="about-desc">
-                                            <span class="heading-meta">About Me</span>
+                                            <span class="heading-meta"></span>
                                             <h2 class="colorlib-heading">Who Am I?</h2>
-                                            <p><strong>Hi I'm Allison Tsatsa</strong> On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country.</p>
-                                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+                                            <p>
+                                                <strong>Hi, I'm Allison Tsatsa.<br /></strong> I'm a Fullstack developer with over 650 hours of design experience. My background includes years of professional scientific research, higher education, teaching and people development, working with vulnerable populations in specialized environments and even the brewing industry.
+                                                I have lived on several continents and am a life-time learner with an ecclectic array of skills and experiences that can add valuble talent and perspective to your organization. I enjoy coding because it provides me with opportunities to tackle and overcome unique challenges while allowing me to use my creativity.
+                                            </p>
                                         </div>
                                     </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-2 animate-box" data-animate-effect="fadeInLeft">
+                                        <div class="services color-2">
+                                            <span class="icon2">
+                                                <i class="fab fa-html5 fa-5x"></i>
+                                            </span>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 animate-box" data-animate-effect="fadeInRight">
+                                        <div class="services color-1">
+                                            <span class="icon2"><i class="fab fa-js-square"></i></span>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 animate-box" data-animate-effect="fadeInTop">
+                                        <div class="services color-2">
+                                            <span class="icon2"><i class="devicon-csharp-line"></i></i></span>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-2 animate-box" data-animate-effect="fadeInBottom">
+                                        <div class="services color-1">
+                                            <span class="icon2"><i class="fab fa-bootstrap"></i></span>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 animate-box" data-animate-effect="fadeInTop">
+                                        <div class="services  color-2">
+                                            <span class="icon2"><i class="fab fa-css3-alt"></i></span>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 animate-box" data-animate-effect="fadeInTop">
+                                        <div class="services color-1">
+                                            <span class="icon2">
+                                                <img src="images/xamarin-2.png" />
+                                            </span>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -189,7 +244,7 @@
                     <div class="colorlib-narrow-content">
                         <div class="row">
                             <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-                                <span class="heading-meta">Education</span>
+                                <span class="heading-meta"></span>
                                 <h2 class="colorlib-heading animate-box">Education</h2>
                             </div>
                         </div>
@@ -207,13 +262,12 @@
                                             </div>
                                             <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                                                 <div class="panel-body">
-                                                    <div class="row">
-                                                        <div class="col-md-6">
-                                                            <p>Harvard University</p>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <p>Cambridge, MA</p>
-                                                        </div>
+                                                    <div class="panel-body">
+                                                        <p>Harvard University</p>
+                                                        <ul>
+                                                            <li>Brand Marketing</li>
+                                                            <li>Strategic Management</li>
+                                                        </ul>
                                                     </div>
                                                 </div>
                                             </div>
@@ -230,8 +284,8 @@
                                                 <div class="panel-body">
                                                     <p>University of St. Joseph</p>
                                                     <ul>
-                                                        <li>West Hartford, CT</li>
-                                                        <li>Separated they live in Bookmarksgrove right</li>
+                                                        <li>Parasitology</li>
+                                                        <li>Animal Behavior</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -276,23 +330,37 @@
                     <div class="colorlib-narrow-content">
                         <div class="row">
                             <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-                                <span class="heading-meta">Portfolio</span>
+                                <span class="heading-meta"></span>
                                 <h2 class="colorlib-heading animate-box">Work Experience</h2>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="timeline-centered">
+
+                                    <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+                                        <div class="timeline-entry-inner">
+                                            <div class="">
+                                                <i class="fas fa-crow fa-5x" style="color:black;"></i>
+                                            </div>
+                                            <div class="timeline-label">
+                                                <h2><a href="https://www.coderfoundry.com" target="_blank">Junior .Net Developer</a> <span>2020</span></h2>
+                                                <p>Created interactive, multi-functioning web applications using MVC and .Net framework while utilizing JS, C#, CSS3, HTML5, SQL and more.</p>
+                                            </div>
+                                        </div>
+                                    </article>
+
+
                                     <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
                                         <div class="timeline-entry-inner">
 
                                             <div class="">
-                                                <i class="fas fa-cat fa-5x" style="color:black;"></i>
+                                                <i class="fas fa-cat fa-5x" style="color:red;"></i>
                                             </div>
 
                                             <div class="timeline-label">
-                                                <h2><a href="#">Quality Assurance Analyst</a> <span>2018-2020</span></h2>
-                                                <p>Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may.</p>
+                                                <h2><a href="https://www.ecolab.com/" target="_blank">Quality Assurance Analyst</a> <span>2018-2020</span></h2>
+                                                <p>Global manufacturing company with expertise in core technologies, including antimicrobials, dispensing and monitoring, personal and environmental hygiene, polymers, surfactants, solid chemistry, water management and data analytics  .</p>
                                             </div>
                                         </div>
                                     </article>
@@ -304,32 +372,32 @@
                                                 <i class="fas fa-dog fa-5x" style="color:black;"></i>
                                             </div>
                                             <div class="timeline-label">
-                                                <h2><a href="#">Lab Manager /Technician</a> <span>2017-2018</span></h2>
-                                                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+                                                <h2><a href="https://www.mcb.harvard.edu/directory/victoria-dsouza/" target="_blank">Lab Manager /Technician</a> <span>2014-2017</span></h2>
+                                                <p>Structural biology lab focused on the structural determinants of reverse transcription and gene translation in retroviruses like HIV, SARS, and Moloney murine leukemia virus (MLV) through the use of nuclear magnetic resonance (NMR) and other biophysical and biochemical methods. </p>
                                             </div>
                                         </div>
                                     </article>
 
-                                    <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-                                        <div class="timeline-entry-inner">
-                                            <div class="">
-                                                <i class="fas fa-crow fa-5x" style="color:black;"></i>
-                                            </div>
-                                            <div class="timeline-label">
-                                                <h2><a href="#">Professional Thumb-wrestler</a> <span>2017-2018</span></h2>
-                                                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-                                            </div>
-                                        </div>
-                                    </article>
+                                    <!--<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+                            <div class="timeline-entry-inner">
+                                <div class="">
+                                    <i class="fas fa-crow fa-5x" style="color:black;"></i>
+                                </div>
+                                <div class="timeline-label">
+                                    <h2><a href="https://fontaflora.com/" target="_blank">Everywoman</a> <span>2018-2018</span></h2>
+                                    <p>Craft brewery with a focus on local, seasonal, and sustainable culture and agricultre while blending English tradition and Belgian inspired beers with Appalachian artisanry, yeilding an array of supurb beers.</p>
+                                </div>
+                            </div>
+                        </article>-->
 
                                     <article class="timeline-entry animate-box" data-animate-effect="fadeInTop">
                                         <div class="timeline-entry-inner">
                                             <div class="">
-                                                <i class="fas fa-spider fa-5x" style="color:black;"></i>
+                                                <i class="fas fa-spider fa-5x" style="color:red;"></i>
                                             </div>
                                             <div class="timeline-label">
-                                                <h2><a href="#">Aspirin Engraver</a> <span>2017-2018</span></h2>
-                                                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+                                                <h2><a href="https://quincycollege.edu/" target="_blank">Adjunct Professor</a> <span>2012-2017</span></h2>
+                                                <p>Public college serving approximatley 4,500 students in the Quincy and South Shore areas of Massachussets.</p>
                                             </div>
                                         </div>
                                     </article>
@@ -347,35 +415,72 @@
                     </div>
                 </section>
 
+                <section class="colorlib-challenges" data-section="applications">
+                    <div class="colorlib-narrow-content">
+                        <div class="row">
+                            <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+                                <span class="heading-meta"></span>
+                                <h2 class="colorlib-heading animate-box">Web Applications</h2>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+                                <div class="project" style="background-image: url('images/AdobeStock_103666978.jpeg')" ;>
+                                    <div class="desc">
+                                        <div class="con">
+                                            <h2><a href="https://atsatsa-bugtracker.azurewebsites.net/" target="_blank">Phage</a></h2>
+                                            <span>Issue Tracker</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+                                <div class="project" style="background-image: url('images/AdobeStock_301521945.jpeg')" ;>
+                                    <div class="desc">
+                                        <div class="con">
+                                            <h2><a href="https://atsatsa-finport.azurewebsites.net/" target="_blank">This Little Piggy Bank</a></h2>
+                                            <span>Household Budget Tracker</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
                 <section class="colorlib-challenges" data-section="challenges">
                     <div class="colorlib-narrow-content">
                         <div class="row">
                             <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-                                <span class="heading-meta">Coding Challenges</span>
-                                <h2 class="colorlib-heading animate-box">Recent Work</h2>
+                                <span class="heading-meta"></span>
+                                <h2 class="colorlib-heading animate-box">Coding Challenges</h2>
                             </div>
                         </div>
                         <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
                             <div class="col-md-12">
-
                             </div>
                         </div>
+
                         <div class="row">
                             <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
                                 <div class="project" style="background-image: url(images/fizz.jpeg);">
                                     <div class="desc">
                                         <div class="con">
-                                            <h3><a data-toggle="modal" data-target="#myModal">FizzBuzz</a></h3>
+                                            <h2><a data-toggle="modal" href="" data-target="#myModal">FizzBuzz</a></h2>
                                             <span>Energy in a Can</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
                             <div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
                                 <div class="project" style="background-image: url(images/blackcat.jpeg);">
                                     <div class="desc">
                                         <div class="con">
-                                            <h3><a data-toggle="modal" data-target="#myModal2">TacoCat</a></h3>
+                                            <h2><a href="" data-toggle="modal" data-target="#myModal2">TacoCat</a></h2>
                                             <span>Palindrome</span>
                                         </div>
                                     </div>
@@ -385,7 +490,7 @@
                                 <div class="project" style="background-image: url(images/city.jpeg);">
                                     <div class="desc">
                                         <div class="con">
-                                            <h3><a data-toggle="modal" data-target="#myModal3">Sunset Hills</a></h3>
+                                            <h2><a data-toggle="modal" href="" data-target="#myModal3">Sunset Hills</a></h2>
                                             <span>Array</span>
                                             <p class="icon">
 
@@ -398,71 +503,85 @@
                                 <div class="project" style="background-image: url(images/fear.jpeg);">
                                     <div class="desc">
                                         <div class="con">
-                                            <h3><a href="work.html">Sum of All Fears</a></h3>
-                                            <span>Application</span>
+                                            <h2><a data-toggle="modal" href="" data-target="#myModal4">Sum Of All Fears</a></h2>
+                                            <span>Array</span>
                                             <p class="icon">
-                                                <span><a href="#"><i class="icon-share3"></i></a></span>
-                                                <span><a href="#"><i class="icon-eye"></i> 100</a></span>
-                                                <span><a href="#"><i class="icon-heart"></i> 49</a></span>
+                                                <span></span>
                                             </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
-
                         </div>
-                        <div class="row">
-                            <div class="col-md-12 animate-box">
-                                <p><a href="#" class="btn btn-outline btn-lg btn-load-more">Load more <i class="icon-reload"></i></a></p>
-                            </div>
-                        </div>
-                    </div>
                 </section>
+                <!--<div class="row">
+        <div class="col-md-12 animate-box">
+            <p><a href="#" class="btn btn-outline btn-lg btn-load-more">Load more <i class="icon-reload"></i></a></p>
+        </div>
+    </div>-->
 
                 <section class="colorlib-blog" data-section="blog">
                     <div class="colorlib-narrow-content">
                         <div class="row">
                             <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-                                <span class="heading-meta">Read</span>
-                                <h2 class="colorlib-heading">Recent Blog</h2>
+                                <span class="heading-meta"></span>
+                                <h2 class="colorlib-heading">Coding Blog</h2>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-                                <div class="blog-entry">
-                                    <a href="blog.html" class="blog-img"><img src="images/shatter.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
-                                    <div class="desc">
-                                        <span><small>April 14, 2018 </small> | <small> Web Design </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
-                                        <h3><a href="blog.html">Renovating National Gallery</a></h3>
-                                        <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                                    </div>
-                                </div>
-                            </div>
                             <div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInRight">
                                 <div class="blog-entry">
-                                    <a href="blog.html" class="blog-img"><img src="images/deathvalley.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+                                    <a href="https://atsatsablog.azurewebsites.net/Blogs/Details/yes-we-code" class="blog-img">
+                                        <img src="images/blur-close-up-code-computer-546819.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com">
+                                    </a>
                                     <div class="desc">
-                                        <span><small>April 14, 2018 </small> | <small> Web Design </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
-                                        <h3><a href="blog.html">Wordpress for a Beginner</a></h3>
-                                        <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                                        <span><small>June 14, 2020 </small> | <small> Web Design </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
+                                        <h3><a href="https://atsatsablog.azurewebsites.net/Blogs/Details/yes-we-code">Yes, We Code!</a></h3>
+                                        <p>
+                                            Picture Rosie the Riveter but with a laptop: Women in web development.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInRight">
+                                <div class="blog-entry">
+                                    <a href="https://atsatsablog.azurewebsites.net/Blogs/Details/the-successful-build-afterglow" class="blog-img"><img src="images/deathvalley.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+                                    <div class="desc">
+                                        <span><small>May 14, 2020 </small> | <small> Web Design </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
+                                        <h3><a href="https://atsatsablog.azurewebsites.net/Blogs/Details/the-successful-build-afterglow">The Successful Build Afterglow</a></h3>
+                                        <p>A small high to counteract the gremlins that make it seem like nothing works.</p>
+                                    </div>
+                                </div>
+                            </div>
+
                             <div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
                                 <div class="blog-entry">
-                                    <a href="blog.html" class="blog-img"><img src="images/budapest.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+                                    <a href="https://atsatsablog.azurewebsites.net/Blogs/Details/confessions-of-a-noob-the-journey-of-a-know-nothing" class="blog-img"><img src="images/shatter.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
                                     <div class="desc">
-                                        <span><small>April 14, 2018 </small> | <small> Inspiration </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
-                                        <h3><a href="blog.html">Make website from scratch</a></h3>
-                                        <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                                        <span><small>April 14, 2020 </small> | <small> Web Design </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
+                                        <h3><a href="https://atsatsablog.azurewebsites.net/Blogs/Details/confessions-of-a-noob-the-journey-of-a-know-nothing">Confessions of A Coding Noob</a></h3>
+                                        <p>What it's like to always know nothing.</p>
                                     </div>
                                 </div>
                             </div>
+
+
+
+                            <!--<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+                    <div class="blog-entry">
+                        <a href="blog.html" class="blog-img"><img src="images/budapest.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+                        <div class="desc">
+                            <span><small>April 14, 2021 </small> | <small> Inspiration </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
+                            <h3><a href="blog.html">The Traveling Developer</a></h3>
+                            <p>Changing technology in changing scenery.</p>
+                        </div>
+                    </div>
+                </div>-->
                         </div>
                         <div class="row">
                             <div class="col-md-12 animate-box">
-                                <p><a href="#" class="btn btn-outline btn-lg btn-load-more">Load more <i class="icon-reload"></i></a></p>
+                                <p><a href="#" class="btn btn-outline btn-lg btn-load-more">Back to the top <i class="icon-reload"></i></a></p>
                             </div>
                         </div>
                     </div>
@@ -472,7 +591,7 @@
                     <div class="colorlib-narrow-content">
                         <div class="row">
                             <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-                                <span class="heading-meta">Get in Touch</span>
+                                <span class="heading-meta"></span>
                                 <h2 class="colorlib-heading">Contact</h2>
                             </div>
                         </div>
@@ -483,7 +602,7 @@
                                         <i class="icon-globe-outline" style="color:black" ;></i>
                                     </div>
                                     <div class="colorlib-text">
-                                        <p><a href="#">allison_tsatsa@alumni.harvard.edu</a></p>
+                                        <p><a href="">allison_tsatsa@alumni.harvard.edu</a></p>
                                     </div>
                                 </div>
 
@@ -501,40 +620,40 @@
                                         <i class="icon-phone" style="color:black" ;></i>
                                     </div>
                                     <div class="colorlib-text">
-                                        <p><a href="tel://">+123 456 7890</a></p>
+                                        <p><a href="tel://">706-204-6222</a></p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-7 col-md-push-1">
-                                <div class="row">
-                                    <div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box" data-animate-effect="fadeInRight">
-                                        <form action="">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="Name">
-                                            </div>
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="Email">
-                                            </div>
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="Subject">
-                                            </div>
-                                            <div class="form-group">
-                                                <textarea name="" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
-                                            </div>
-                                            <div class="form-group">
-                                                <input type="submit" class="btn btn-outline btn-send-message" value="Send Message">
-                                            </div>
-                                        </form>
-                                    </div>
+                            <!--<div class="col-md-7 col-md-push-1">
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box" data-animate-effect="fadeInRight">
+                            <form action="">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Name">
                                 </div>
-                            </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Subject">
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" class="btn btn-outline btn-send-message" value="Send Message">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>-->
                         </div>
                     </div>
                 </section>
             </div><!-- end:colorlib-main -->
         </div><!-- end:container-wrap -->
     </div><!-- end:colorlib-page -->
-    <!-- The Modal -->
+    <!-- FizzBuzz Modal -->
     <div id="myModal" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
@@ -544,17 +663,15 @@
                 <h1>FizzBuzz</h1>
             </div>
             <div class="modal-body">
-                <div class="row">
-                    <div class="col">
-                        <p><h3>This exercise finds multiples of 3 and replaces them with "Fizz". For multiples of 5, it replaces them with "Buzz" and for numbers that are both, it will return "FizzBuzz".</h3></p>
-                        <button id="btnFizz">FizzBuzz Me!!</button>
-                        <button id="btnText">Show Code</button>
-                        <button id="btnClear">Clear</button>
-                    </div>
-                    <div class"row">
-                        <div class="col">
-                            <div id="fizzCode">
-                                <pre><code class="language-js">
+                <p><h3>This exercise finds multiples of 3 and replaces them with "Fizz". For multiples of 5, it replaces them with "Buzz" and for numbers that are both, it will return "FizzBuzz".</h3></p>
+                <button id="btnFizz">FizzBuzz Me!!</button>
+                <button id="btnText">Show Code</button>
+                <button id="btnClear">Clear</button>
+            </div>
+            <div class"row">
+                <div class="col">
+                    <div id="fizzCode">
+                        <pre><code class="language-js">
 
  $('#btnFizz').on("click", function () {
     var stuff = '';
@@ -572,17 +689,13 @@
     console.log(stuff)
 
                                 </code></pre>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="modal-footer">
-            <div class="row">
-                <div class="col-8">
-                    <p id="output"></p>
-                </div>
+        <div class="row">
+            <div class="col-8">
+                <p id="output"></p>
             </div>
         </div>
     </div>
@@ -597,29 +710,19 @@
                 <h1>TacoCat</h1>
             </div>
             <div class="modal-body">
-                <div class="row">
-                    <div class="col">
-                        <p><h3>To determine if something is a palindrome, please enter your text below.</h3></p>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col">
-                                    <input id="input2" type="text" />
-                                </div>
-                            </div>
-                            <div class"row">
-                                <div class="col">
-                                    <button id="btnCrunch2">Palidrome?</button>
-                                    <button id="btnText2">Show Code</button>
-                                    <button id="btnClear2">Clear</button>
-                                    <div class"row">
-                                        <div class="row">
-                                            <div class="col">
-                                                <p id="output2"></p>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div id="tacoCode">
-                                                <pre><code class="language-js">
+                <div class="row" style="margin-left: 15px">
+                    <p><h3>To determine if something is a palindrome, please enter your text below.</h3></p>
+                    <input id="input2" class="form-control" placeholder="Enter Text" type="text" />
+                </div>
+                <button id="btnCrunch2">Palidrome?</button>
+                <button id="btnText2">Show Code</button>
+                <button id="btnClear2">Clear</button>
+            </div>
+            <p id="output2"></p>
+            <div class="row">
+                <div class="col">
+                    <div id="tacoCode">
+                        <pre><code class="language-js">
 
  $('#btnCrunch').click(function () {
             var str = $('#input').val().toLowerCase();
@@ -633,14 +736,65 @@
         })
 
 
-                                                </code></pre>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                 </code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Sunset Hills -->
+    <div id="myModal3" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <!--<span class="close">&times;</span>-->
+                <button type="button" id="close" data-dismiss="modal">&times;</button>
+                <h1>Sunset Hills</h1>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <input id="hillsInput1" class="form-control clearMe numOnly" placeholder="Number 1" type="text" />
+                            <input id="hillsInput2" class="form-control clearMe numOnly" placeholder="Number 2" type="text" />
+                            <input id="hillsInput3" class="form-control clearMe numOnly" placeholder="Number 3" type="text" />
+                            <input id="hillsInput4" class="form-control clearMe numOnly" placeholder="Number 4" type="text" />
+                            <input id="hillsInput5" class="form-control clearMe numOnly" placeholder="Number 5" type="text" />
+                            <input id="hillsInput6" class="form-control clearMe numOnly" placeholder="Number 6" type="text" />
                         </div>
-                        <div class="modal-footer">
+                    </div>
+
+                    <div class="row">
+                        <button id="btnRunHills">Run Sunset Hills</button>
+                        <button id="btnShowHills">Show Code</button>
+                        <button id="btnClearHills">Clear</button>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col">
+                            <h3 id="hillsOutput"></h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div id="hillsCode">
+                                <pre><code class="language-js">
+
+ function SunsetHills(buildings) {
+        let tallest = Number.MIN_VALUE;
+        let sunsetViews = new Array();
+            for (var index = 0; index < buildings.length; index++) {
+                if (buildings[index] > tallest) {
+                tallest = buildings[index];
+                sunsetViews.push(`The Building in position ${index} with height ${tallest} can see the sunset. <br>`);
+                }
+            }
+return sunsetViews.join("");
+}                                   
+                                </code></pre>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -649,9 +803,86 @@
     </div>
 
 
+    <!--Sum of All Fears-->
+    <div id="myModal4" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <!--<span class="close">&times;</span>-->
+                <button type="button" id="close" data-dismiss="modal">&times;</button>
+                <h1>Sum Of All Fears</h1>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="col-lg-12">
+                        <h4>
+                            Given a list of numbers and a number K, return whether any two numbers from the list add up to K.
+                        </h4>
+                        <input id="k" type="text" placeholder="Enter K" />
+                        <br />
+                        <div class="row">
+                            <div class="col-md-12">
+                                <input id="soafInput1" placeholder="Number 1" type="text" />
+                                <input id="soafInput2" placeholder="Number 2" type="text" />
+                                <input id="soafInput3" placeholder="Number 3" type="text" />
+                                <input id="soafInput4" placeholder="Number 4" type="text" />
+                                <input id="soafInput5" placeholder="Number 5" type="text" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <button id="btnSOAF">Find K</button>
+                            <button id="btnShowSOAF">Show Code</button>
+                            <button id="btnClearSOAF">Clear</button>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div id="soafCode">
+                                    <pre><code class="language-js">
 
+    let myArray = new Array();
+    myArray.push(Number($("#soafInput1").val()));
+    myArray.push(Number($("#soafInput2").val()));
+    myArray.push(Number($("#soafInput3").val()));
+    myArray.push(Number($("#soafInput4").val()));
+    myArray.push(Number($("#soafInput5").val()));
+
+    let target = 0;
+    let found = false;
+
+    for (var index = 0; index < myArray.length; index++) {
+    target = k - myArray[index];
+    if (myArray.indexOf(target, index + 1) > 0) {
+    found = true;
+    break;
+    }
+    }
+    if (found) {
+    $("#soafOutput").html(`A K value of ${k} was found in the array`);
+    }
+    else {
+    $("#soafOutput").html(`A K value of ${k} was NOT found in the array`);
+    }
+
+</code></pre>
+                                </div>
+                                <br />
+                                <div class="row">
+                                    <div class="col">
+                                        <h3 id="soafOutput"></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--</div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--</div>-->
     <!-- jQuery -->
-    <script src="js/jquery.min.js"></script>
+    <script src="Scripts/jquery-3.5.1.js"></script>
+    <!--<script src="js/jquery.min.js"></script>-->
     <!-- jQuery Easing -->
     <script src="js/jquery.easing.1.3.js"></script>
     <!-- Bootstrap -->
@@ -668,9 +899,8 @@
     <script src="js/main.js"></script>
     <script src="Scripts/prism.js"></script>
 
-
+    <!--FizzBuzz-->
     <script>
-        // FizzBuzz
         var modal = document.getElementById("myModal");
         window.onclick = function (event) {
             if (event.target == modal) {
@@ -706,41 +936,141 @@
 
     </script>
 
+    <!--TacoCat-->
     <script>
-        //TacoCat//
         var modal = document.getElementById("myModal2");
 
         window.onclick = function (event) {
             if (event.target == modal) {
-                modal.style.display = "none";
+                modal.style.display = "inherit";
             }
         }
         $("#tacoCode").hide();
 
         $('#btnCrunch2').click(function () {
             var str = $('#input2').val().toLowerCase();
+            //str = str.replaceAll("\\s", "");
+            str = str.replace(/\s/g, '');
+            //str.replace(/ /g, "");
             var reversed = str.split('').reverse().join('');
             if (str === reversed) {
-                $('#output2').text(str + " This is a palindrome.");
+                $('#output2').text(str + " is a palindrome.");
             }
             else {
-                $('#output2').text("That is not a palindrome.");
-            
+                $('#output2').text(" is not a palindrome.");
+            }
+        });
+        $("#btnClear2").on("click", function () {
+            $("#input2").val("");
+            $(".clearMe").val("");
+            $("#output2").html("");
+        });
+        $("#btnText2").on("click", function () {
+            $("#tacoCode").toggle();
+            let btnText2 = $(this).text();
+            $(this).text($(this).text().startsWith("Show") ? btnText2.replace("Show", "Hide") : btnText2.replace("Hide", "Show"));
+        });
 
-            $("#btnClear2").on("click", function () {
-                $(".clearMe").val("");
-                $("#output2").html("");
-            });
-            $("#btnText2").on("click", function () {
-                $("#tacoCode").toggle();
-                let btnText2 = $(this).text();
-                $(this).text($(this).text().startsWith("Show") ? btnText2.replace("Show", "Hide") : btnText2.replace("Hide", "Show"));
-            });
-        
     </script>
 
+    <!--Sunset Hills-->
+    <script>
+        $("#hillsCode").hide();
 
+        $("#btnRunHills").on("click", function () {
+            var num1 = Number($("#hillsInput1").val());
+            var num2 = Number($("#hillsInput2").val());
+            var num3 = Number($("#hillsInput3").val());
+            var num4 = Number($("#hillsInput4").val());
+            var num5 = Number($("#hillsInput5").val());
+            var num6 = Number($("#hillsInput6").val());
 
+            var buildings = [num1, num2, num3, num4, num5, num6];
+            var n = 6;
+            var count = 1;
+            var compare = buildings[0];
+            var whatever = [compare];
+            if (num1 == 0 && num2 == 0 && num3 == 0 && num4 == 0 && num5 == 0 && num6 == 0) {
+                $('#hillsOutput').text(`fields cannot be left empty.`)
+            }
+            else {
+                for (i = 1; i < n; i++) {
+                    if (buildings[i] > compare) {
+                        count += 1;
+                        compare = buildings[i];
+                        whatever.push(compare);
+                    }
+                }
+                $('#hillsOutput').text(`There are ${count} buildings that can see the sun. They are ${whatever.join(", ")}.`)
+            }
+        })
+        $("#btnClearHills").on("click", function () {
+            $("#hillsInput1").val("");
+            $("#hillsInput2").val("");
+            $("#hillsInput3").val("");
+            $("#hillsInput4").val("");
+            $("#hillsInput5").val("");
+            $("#hillsInput6").val("");
+            $("#hillsInput1, #hillsInput2, #hillsInput3, #hillsInput4, #hillsInput5, #hillsInput6").val("");
+            $(".clearMe").val("");
+            $("#hillsOutput").text("");
+        });
+        $("#btnShowHills").on("click", function () {
+
+            $("#hillsCode").toggle();
+
+            let btnText = $(this).text();
+            $(this).text($(this).text().startsWith("Show") ? btnText.replace("Show", "Hide") : btnText.replace("Hide", "Show"));
+        })
+    </script>
+
+    <!--Sum of All Fears-->
+    <script>
+        $("#soafCode").hide();
+        $("#btnShowSOAF").on("click", function () {
+            $("#soafCode").toggle();
+        });
+
+        $("#btnSOAF").on("click", function () {
+            let k = Number($("#k").val());
+
+            let myArray = new Array();
+            myArray.push(Number($("#soafInput1").val()));
+            myArray.push(Number($("#soafInput2").val()));
+            myArray.push(Number($("#soafInput3").val()));
+            myArray.push(Number($("#soafInput4").val()));
+            myArray.push(Number($("#soafInput5").val()));
+
+            let target = 0;
+            let found = false;
+
+            for (var index = 0; index < myArray.length; index++) {
+                target = k - myArray[index];
+                if (myArray.indexOf(target, index + 1) > 0) {
+                    found = true;
+
+                    break;
+                }
+            }
+            if (found) {
+                $("#soafOutput").html(`A K value of ${k} was found in the array.`);
+            }
+            else {
+                $("#soafOutput").html(`A K value of ${k} was NOT found in the array.`);
+            }
+            $("#btnClearSOAF").on("click", function () {
+                $("#soafInput1").val("");
+                $("#soafInput2").val("");
+                $("#soafInput3").val("");
+                $("#soafInput4").val("");
+                $("#soafInput5").val("");
+                $("#k").val("");
+                $("#soafInput1, #soafInput2, #soafInput3, #soafInput4, #k").val("");
+                $(".clearMe").val("");
+                $("#soafOutput").text("");
+            });
+        })
+    </script>
 
 </body>
 </html>

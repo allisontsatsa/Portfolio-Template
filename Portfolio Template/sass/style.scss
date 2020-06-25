@@ -6,10 +6,10 @@ $grid-gutter-width: 40px !default;
 $border-radius-base:  4px !default;
 $padding-base-vertical: 14px !default;
 
-$brand-primary: #2c98f0 !default;
+$brand-primary: rgba(255,255,255,.5);
 $brand-footer: #2C2C2C !default;
 
-$brand-color-1: #2c98f0 !default;
+$brand-color-1: rgba(255,255,255,.5) !default;
 $brand-color-2: #f2f3f7 !default;
 $brand-color-3: #f9bf3f !default;
 $brand-color-4: #a84cb8 !default;
@@ -303,6 +303,7 @@ figure {
 			}
 		}
 	}
+
 	.colorlib-footer {
 		font-size: 15px;
 		text-align: center;
@@ -331,7 +332,7 @@ figure {
 					&:hover, &:active, &:focus {
 						text-decoration: none;
 						outline: none;
-						color: $brand-danger;
+						color: rgba(255,255,255,.5);
 					}
 				}
 			}
@@ -617,7 +618,7 @@ body {
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	font-family: $font-primary;
-	background-color: $brand-gray;
+	background-color: #777777 !important;
 	color: $brand-white;
 	position: relative;
 	-webkit-box-shadow: none !important;
@@ -625,7 +626,6 @@ body {
 	-ms-box-shadow: none !important;
 	-o-box-shadow: none !important;
 	box-shadow: none !important;
-
 }
 .panel {
 	-webkit-box-shadow: none !important;
@@ -725,7 +725,7 @@ margin-left: -20px;
 	line-height: 40px;
 	float: left;
 	i{
-		color: $brand-white;	
+		color: $brand-gray	
 	}
 	&.color-2{
 		background: $brand-gray;
@@ -803,8 +803,7 @@ margin-left: -20px;
 	-ms-box-shadow: 0px 0px 56px -8px rgba(0,0,0,0.17);
 	-o-box-shadow: 0px 0px 56px -8px rgba(0,0,0,0.17);
 	box-shadow: 0px 0px 56px -8px rgba(0,0,0,0.17);
-	border-bottom: 2px solid $brand-primary;
-
+	border-bottom: 2px solid rgba(255,255,255,.5)
 	.icon2 {
 		display: block;
 		margin-bottom: 20px;
@@ -1115,7 +1114,7 @@ margin-left: -20px;
 		i {
 			display: table-cell;
 			vertical-align: middle;
-			color: $brand-primary;
+			color: rgba(255,255,255,.5);
 			font-size: 60px;
 			height: 100px;
 			@media screen and (max-width: $screen-lg) {
